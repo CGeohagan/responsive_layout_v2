@@ -1,0 +1,21 @@
+/* Containers -------------------- */
+
+body {
+  background-color: #fafafa;
+  @include breakpoint(medium) {
+  	background-color: #ffffff;
+  }
+}
+
+.container {
+  margin: 1em;
+  @include breakpoint(medium) {
+  	margin: 2em;
+  }
+  @include breakpoint(large) {
+  	margin: 2em 5% 0em;
+  }
+}
+
+
+

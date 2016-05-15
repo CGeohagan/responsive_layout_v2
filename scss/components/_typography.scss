@@ -1,0 +1,96 @@
+/* Typography -------------------- */
+
+body,
+.contact p {
+  color: $color-prim;
+  font: $body-font $stack-sans-serif;
+  text-align: center;
+  line-height: 1.5em;
+  font-weight: 100;
+  }
+
+.name {
+  color: $color-sec;
+  font-size: $large-header-font;
+  font-weight: 600;
+  }
+
+.intro {
+  @include breakpoint(medium){
+      float: left;
+      max-width: 58%;
+      font-size: $med-intro-font;
+      line-height: 1.5em;
+      text-align: left;
+  }
+}
+
+h1,
+.main-nav {  
+  font-size: $main-nav-font; 
+  color: $color-link;
+  text-transform: uppercase;
+  font-weight: bold;
+  }
+
+.main-nav a {
+  text-decoration: none;
+  color: $color-link;
+  }
+
+h2 {
+  font-size: $medium-header-font; 
+  color: $color-sec;
+  font-weight: 400;
+  }
+
+.portfolio p {
+  font-size: $portfolio-font;
+  color: $color-sec;
+  line-height: 1.4em;
+  }
+
+.contact-info {
+  @include breakpoint(medium){
+    font-size: $large-contact-font;
+  }
+}
+
+.contact-info a {
+  text-decoration: none;
+  font-weight: 500;
+  color: $color-prim;
+}
+
+.contact p {
+    @include breakpoint(medium){
+      font-size: $large-contact-font;
+      margin: 40px 0 45px;
+  }
+}
+
+footer {
+
+  .name {
+    @extend %footer-type;
+    font-size: $main-nav-font;
+  }
+
+  .mobile-footer,
+  .large-footer {
+    @extend %footer-type;
+    font-size: $footer-font;
+    text-transform: uppercase;
+  }
+
+  .large-footer a {
+    text-decoration: none;
+    color: $color-link;
+
+  }
+  
+}
+
+
+
+

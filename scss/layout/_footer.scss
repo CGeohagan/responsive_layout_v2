@@ -1,0 +1,71 @@
+/* Footer Styles -------------------- */
+
+footer {
+
+  margin-top: 55px;
+  border-top: solid 1px $lighter-grey;
+
+  @include breakpoint(medium) {
+  	margin: 55px 0 55px;
+  }
+
+  @include breakpoint(large) {
+  	margin: 65px 0 0;
+  }
+  
+}
+
+footer {
+
+  .name {
+  	@extend %inline;
+  	float: left;
+  	@extend %footer-layout;
+  }
+
+  .mobile-footer {
+  	@extend %inline;
+  	float: right;
+  	@extend %footer-layout;
+  	@include breakpoint(medium) {
+  	 	display: none;
+  	}
+  }
+
+  .large-footer {
+  	display: none;
+  	@extend %footer-layout;
+  	@include breakpoint(medium) {
+  	 	display: inline-block;
+    	float: right;
+  	}
+  }
+
+  .large-footer li {
+  	@include breakpoint (medium) {
+  		display: inline-block;
+    	margin: 0 15px;
+  	}
+  }
+
+  .large-footer ul {
+  	@include breakpoint (medium) {
+    	margin: 0;
+  	}
+  }
+
+}
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+

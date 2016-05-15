@@ -1,0 +1,30 @@
+/* Extends -------------------- */
+
+//Typography Styles
+
+%footer-type {
+	color: $color-link;
+    font-weight: 600;
+}
+
+//Layout Styles
+
+%header-layout {
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+}
+
+%footer-layout {
+  margin: 0;
+  padding: 22px 0;
+}
+
+%main-nav-layout {
+  padding: 8px 0;
+  margin: 5px 0;
+}
+
+%inline {
+  display: inline-block;
+}

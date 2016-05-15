@@ -1,0 +1,87 @@
+/* Header Styles -------------------- */
+
+.name {
+  margin-top: .5em;
+  @extend %header-layout;
+  @extend %main-nav-layout;
+
+  @include breakpoint(medium) {
+  	 padding-top: 45px;
+  }
+  @include breakpoint(large) {
+  	 float: left;
+     padding: 0px;
+     margin: 0px;
+  }
+
+ }
+
+ nav {
+ 	@include breakpoint(large) {
+ 		margin: 55px 0 10px;
+ 	}
+ }
+
+.main-nav {
+	@include breakpoint(large) {
+		float: right;
+	}
+
+	li {
+		list-style: none;
+  		background-color: #ffffff;
+  		@extend %header-layout;
+  		@extend %main-nav-layout;
+
+  		@include breakpoint(medium) {
+  	 		display:inline-block;
+    		margin: 0 14px;
+  		}
+
+  		@include breakpoint(large) {
+  			display: inline-block;
+    		padding: 0px;
+    		margin: 0 19px;
+  		}
+	}
+
+	ul {
+		padding: 0 0 8px 0;
+		@include breakpoint(large){
+			margin: 0px;
+		}
+	}	
+
+	a {
+		@extend %header-layout;
+	}
+}
+
+.intro,
+header img {
+  display: block;
+  margin: 30px auto;
+}
+
+
+.profile-image {
+  display: block;
+  max-width: 65%;
+
+  	@include breakpoint(medium) {
+  	 	float: right;
+    	max-width: 40%;
+  	}
+}
+
+.clearfix{
+  @include breakpoint(medium){
+    &::after {
+  	   content: "";
+      display: table;
+      clear: both;
+    }
+  }
+}
+
+
